@@ -7,6 +7,18 @@
     --arrows:5;
     --height: 100vh;
 }
+@keyframes move-horizontal{
+    from{-webkit-transform:translateX(15px);transform:translateX(15px)}
+    to{-webkit-transform:translateX(-15px);transform:translateX(-15px)}
+}
+@keyframes click-animation{
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(0.8);
+    }
+}
 html{font-size: 62.5%;}
 .flex-align-right{justify-content: flex-end;}
 .nossa_historia *{box-sizing: border-box;outline: none;margin: 0;padding: 0;color: #ededed;}
@@ -131,7 +143,7 @@ html{font-size: 62.5%;}
 .slider_2020 .interagir{align-items: flex-end;}
 .slider_2020 .year_line{width: 50%;right: unset;left: 0;}
 .slider_2020 .slider_hidden_content2 .image{padding-right: 5rem;}
-
+.slider_2020 .image--vertical{max-height: 90vh;object-fit: contain;}
 
 @media screen and (max-width: 1600px){
     html{font-size: 50%;}
@@ -141,20 +153,21 @@ html{font-size: 62.5%;}
 @media screen and (max-height: 690px){
     .slider_1998--2 .image{margin-bottom: -20rem;}
     .slider_2003 .image{max-width: 440px;}
+    .nossa_historia .vertical_line{height: 15rem;}
 }
 @media screen and (min-width:961px){
     /* .click_expand img{transition: all 1.4s ease;}
     .click_expand:hover img{transform: scale(1.02);} */
 }
-@keyframes move-horizontal{
-    from{-webkit-transform:translateX(15px);transform:translateX(15px)}
-    to{-webkit-transform:translateX(-15px);transform:translateX(-15px)}
-}
-@keyframes click-animation{
-    from{
-        transform: scale(1.1);
-    }
-    to{
-        transform: scale(0.8);
-    }
+@media screen and (max-width:960px){
+    .slider_item{overflow: hidden;}
+    .slider_sair{color: transparent;background: url('../images-timeline/voltar.png') no-repeat;left: unset;bottom: unset;top: 20px;right: 20px;background-position: right;background-size: 25px;}
+    .nossa_historia .arraste{width: 2.5rem;}
+    .slider_item .slider_explorar  .text{font-size: 1.7rem;letter-spacing: 0.08em;}
+    .slider_item.slider_template--cover .title{font-size: 5rem;}
+    .slider_item.slider_template--cover .title span{font-size: 9rem;}
+    .slider_template--cover .text.margin-right {right: -1.2rem;}
+    .slider_1970 .year_line::before{width: 7rem;height: 7rem;}
+    .slider_1970 .year_line::after{display: none;}
+    
 }

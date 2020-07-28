@@ -24,8 +24,8 @@
         <div class="slider slick-slider">
             <div class="slider_item slider_template--cover" id="cover">
                 <picture>
-                    <!-- <source media="(min-width: )" srcset=""> -->
-                    <img src="images-timeline/slider1.jpg" alt="Nossa História" class="banner">
+                    <source media="(min-width: 961px)" srcset="images-timeline/slider1.jpg">
+                    <img src="images-timeline/slider1-mobile.jpg" alt="Nossa História" class="banner">
                 </picture>
                 <div class="slider_container">
                     <div id="first-parallax">
@@ -42,11 +42,15 @@
                     </div>
                     <span class="vertical_line"></span>
                     <div class="slider_explorar flex-box direction-column align-center">
-                        <img src="images-timeline/arraste-ico.png" alt="Clique e arraste com o mouse"
-                            title="Clique e arraste com o mouse" class="arraste">
+                        <picture>
+                            <source media="(min-width: 961px)" srcset="images-timeline/arraste-ico.png">
+                                <img src="images-timeline/arraste-ico-mobile.png" alt="Segure e arraste"
+                                title="Clique e arraste com o mouse" class="arraste">
+                        </picture>
                         <p class="text text-center">
                             PARA EXPLORAR A LINHA DO TEMPO<br>
-                            <span><i>Segure e arraste o mouse</i></span>
+                            <span class="only-desktop"><i>Segure e arraste o mouse</i></span>
+                            <span class="only-mobile"><i>Arraste para o lado</i></span>
                         </p>
                     </div>
                 </div>
@@ -828,7 +832,7 @@
                     <div class="flex-box align-center">
                         <figure class="click_expand" title="Clique para expandir a imagem"
                             onclick="expandHidden('#y2020');">
-                            <img src="images-timeline/slider19.jpg" alt="" class="image--full image">
+                            <img src="images-timeline/slider19.jpg" alt="" class="image--full image image--vertical">
                             <span class="slider_year--big" style="pointer-events:none;">2020</span>
                         </figure>
                         <article class="col">
