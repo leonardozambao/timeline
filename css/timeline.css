@@ -1,0 +1,160 @@
+@import url('fonts/stylesheet.css');
+:root{
+    --background: 1;
+    --linha:2;
+    --conteudo:3;
+    --conteudo-oculto: 4;
+    --arrows:5;
+    --height: 100vh;
+}
+html{font-size: 62.5%;}
+.flex-align-right{justify-content: flex-end;}
+.nossa_historia *{box-sizing: border-box;outline: none;margin: 0;padding: 0;color: #ededed;}
+.nossa_historia{height: var(--height);background: url('../images-timeline/background.jpg') no-repeat;background-size: cover;}
+.slider_item{height: var(--height);cursor: -webkit-grab;cursor: grab;position: relative;}
+.slider_container{width: 100%;max-width: 910px;padding: 100px 15px;margin: 0 auto;position: relative;z-index: var(--conteudo);display: flex;height: var(--height);flex-direction: column;justify-content: center;align-items: center;}
+.slider_item .banner{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: var(--background);object-fit: cover;}
+.slider_item .title{font-weight: 500;font-size: 3.3rem;line-height: 1.1em;}
+.slider_item .title span{display: block;font-size: 6.3rem;font-family: 'PoynterOSDisp';font-weight: 600;line-height: 0.9;}
+.slider_item.slider_template--cover .title{font-size: 7rem;line-height: 1em;}
+.slider_item.slider_template--cover .title span{font-size: 13rem;line-height: 0.9em;}
+.slider_item .margin-right{display: table;margin: 0 0 0 auto;}
+.slider_item .text{font-size: 2rem;font-family: 'PoynterOSDisp';}
+.slider_item .text .big{font-size: 5.2rem;line-height: 0.9em;}
+.nossa_historia .vertical_line{display: block;width: 3px;background-color: #ededed;height: 20rem;margin: 3.5rem auto 9rem;}
+.nossa_historia .text-center{text-align: center;}
+.nossa_historia .arraste{animation: move-horizontal 3s infinite;margin-bottom: 2rem;}
+.slider_template--cover .text.margin-right{position: relative;right: -1.7rem;}
+.slider_item .slider_explorar .text{font-family: 'Brother 1816';font-weight: 500;letter-spacing: 0.1em;}
+.slider_item .slider_explorar .text span{font-family: 'PoynterOSDisp Roman';font-weight: normal;}
+.slider_sair{position: fixed;left: 5.7rem;bottom: 3.8rem;text-decoration: none;z-index: var(--linha);font-weight: 500;font-size: 1.8rem;cursor: pointer;}
+.nossa_historia .year_line{position: absolute;right: 0;top: 50%;height: 3px;width: 100%;background-color: #b66955;pointer-events: none;z-index: var(--linha);pointer-events: none;}
+.nossa_historia .year_line.year_line--half_right{width: 50%;}
+.slider_1970 .year_line::before{content: '';width: 10rem;height: 10rem;background: url('../images-timeline/logo-plaenge-min.png') no-repeat;background-size: 100%;display: block;position: absolute;left: 0;top: 0;transform: translate(-50%, -50%);z-index: var(--linha);}
+.slider_1970 .year_line::after{content: '';width: 3px;height: 25.7rem;display: block;position: absolute;left: 0;top: 0;background-color: #b66955;}
+.slider_1974 figure,
+.slider_1970 figure{position: relative;width: 50%;}
+.slider_1970 .image{max-width: calc(45.5rem + 30px);}
+.slider_year--big{font-weight: 900;font-style: italic;font-size: 11rem;font-family: 'Brother 1816';}
+.slider_1970 .slider_year--big{position: absolute;bottom: -0.7rem;left: 0;width: 100%;text-align: center;line-height: 1em;}
+.slider_item .right_double{height: 100%;width: 50%;padding-left: 4rem;}
+.slider_item .right_double > *{height: 50%;display: flex;flex-direction: column;padding: 4rem 0 0 2rem;}
+.slider_item .right_double > *:first-child{justify-content: flex-end;padding: 0 0 4rem 2rem;}
+.slider_expandir,
+.slider_explorar{position: absolute;bottom: 30px;left: 0;width: 100%;}
+.slider_expandir img{margin-bottom: 1rem;width: 3.3rem;animation: click-animation 2s infinite;}
+.slider_expandir .text{font-weight: 500;font-family: 'Brother 1816';font-size: 1.6rem;}
+.slider_1970 .slider_container{z-index: var(--linha);}
+.slider_1970 .year_line{z-index: var(--conteudo);}
+.click_expand{cursor: pointer;}
+.slider_hidden_content2,
+.slider_hidden_content_video,
+.slider_hidden_content{z-index: var(--conteudo-oculto);position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.arrow_slider{position: absolute;top: calc(50% - 7.7rem);left: 50px;z-index: var(--arrows);cursor: pointer;font-weight: 300;font-style: italic;font-size: 3.5rem;text-decoration: none;transition: all 1200ms ease;}
+.arrow_slider::after{content: '';width: 3.3rem;height: 5.3rem;background: url('../images-timeline/arrow-left.png') no-repeat;background-size: 100%;display: block;margin: 0 auto;}
+.arrow_slider--next{left: unset;right: 50px;}
+.arrow_slider--next::after{background: url('../images-timeline/arrow-right.png') no-repeat;background-size: 100%;}
+.slider_item .quote{font-family: 'PoynterOSDisp Roman';font-style: italic;}
+.slider_item .quote .autor{font-family: 'Brother 1816';display: block;font-style: normal;margin-top: 2rem;font-size: 2.2rem;}
+.slider_item .quote small{font-weight: 300;font-family: 'Brother 1816';display: block;font-style: normal;font-size: 1.4rem;}
+.slider_item:not(.slick-current) .arrow_slider{opacity: 0;}
+.close_hidden{position: absolute;top: 50px;right: 50px;z-index: var(--arrows);}
+.slider_item .image--full{width: 100%;}
+.slider_1971 .title{padding-left: 6.8rem;margin-bottom: 2rem;}
+.slider_container.container--align_start{align-items: flex-start;}
+.slider_container.container--align_end{justify-content: flex-end;}
+.slider_1988 .row,
+.slider_1993 .row,
+.slider_1998 .row,
+.slider_2003 .row,
+.slider_2009 .row,
+.slider_2014 .row,
+.slider_2019_2 .row,
+.slider_1971 .row{justify-content: space-around;width: 100%;align-items: center;}
+.slider_1988 .row > *,
+.slider_1993 .row > *,
+.slider_1998 .row > *,
+.slider_2009 .row > *,
+.slider_2003 .row > *,
+.slider_2014 .row > *,
+.slider_2019_2 .row > *,
+.slider_1971 .row > *{padding: 0 2rem;}
+.slider_1974 .image{max-width: 100%;}
+.slider_item .col_02{width: 50%;}
+.slider_1983 .image{width: auto;height: var(--height);}
+.slider_1983 .slider_container{padding: 0 15px;}
+.slider_1988 .row{align-items: flex-start;}
+.slider_1988 .slider_year--big{line-height: 0.7em;}
+.slider_1998 .title,
+.slider_1988 .title{margin-bottom: 4rem;}
+.slider_1993 .image{width: 50%;margin: 2rem 0 1rem;max-height: 300px;object-fit: contain;}
+.slider_1993 .slider_year--big{line-height: 1em;}
+.slider_1995 .image{position: absolute;bottom: 0;left: 0;max-height: var(--height);}
+.slider_1995 figure{position: relative;height: var(--height);}
+.slider_hidden_content .image--expanded{max-width: 100%;max-height: 100%;width: 88rem;height: auto;margin: auto;object-fit: cover;}
+.slider_1998--2 .image{z-index: var(--background);margin: -22rem 0 -9rem 0;}
+.slider_1998--2 .row,
+.slider_1998--2 .title{z-index: var(--conteudo);}
+.slider_1998--2 .expandir{width: 10rem;margin-left: 5rem;}
+.slider_1998--2 .slider_year--big{line-height: 0.6em;}
+.slider_1998--2 .hold_year{margin-bottom: 3rem;}
+.slider_2003 .image{margin: 0 auto;max-width: 100%;}
+.slider_2008 .text{margin-top: 5rem;}
+.slider_2009 .image{margin: 3rem 0 0;}
+.slider_2010 .expandir,
+.slider_2009 .expandir{position: absolute;top: 50%;left: 15px;transform: translateY(-50%);width: 10rem;}
+.slider_2010 .slider_hidden_content .image,
+.slider_2009 .slider_hidden_content .image{padding-right: 5rem;margin: 0;width: 50%;}
+.slider_2010 figure{width: 40%;}
+.slider_2010 .image{width: 100%;}
+.slider_2010 .right_double{width: 60%;}
+.slider_2014 .image{margin-top: 4rem;}
+.slider_2016 .slider_year--big{line-height: 1em;}
+.slider_2016_2 .title,
+.slider_2016 .title{margin-bottom: 2rem;}
+.slider_2016_2 .names{position: absolute;right: 0;top: 50%;font-size: 2rem;transform: translateY(-50%);font-family: 'Brother 1816';}
+.slider_2016_2 .names span{display: block;font-size: 1.4rem;font-weight: 100;margin-bottom: 0.6em;}
+.slider_2016_2 .expandir{width: 10rem;margin-left: 4rem;}
+.slider_hidden_content_video{background-color: rgba(0,0,0,0.8);}
+.slider_hidden_content_video .video_container{position: absolute;width: 100%;max-width: 910px;height: auto;padding-bottom: 56.25%;overflow: hidden;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.slider_hidden_content_video .video_container iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.slider_2019 .title{margin-bottom: 4rem;} 
+.slider_2019 .slider_year--big{margin-right: 4rem;position: relative;top: -16rem;}
+.slider_2019_2 .image{width: 70%;margin-top: 4rem;}
+.slider_2020 figure{position: relative;width: 40%;margin-right: 5rem;}
+.slider_2020 .slider_year--big{position: absolute;bottom: 0;left: 0;width: 100%;text-align: center;}
+.slider_2020 .expandir,
+.slider_2020 .play_button{width: 10rem;}
+.slider_2020 .play_button{margin-right: 4rem;}
+.slider_2020 .veja_video{margin: 5rem 0;}
+.slider_2020 .logo_anos{width: 16rem;margin-right: 5rem;}
+.slider_2020 .interagir{align-items: flex-end;}
+.slider_2020 .year_line{width: 50%;right: unset;left: 0;}
+.slider_2020 .slider_hidden_content2 .image{padding-right: 5rem;}
+
+
+@media screen and (max-width: 1600px){
+    html{font-size: 50%;}
+    .slider_container{padding: 15px;}
+    .slider_template--cover .text.margin-right{position: relative;right: -4.2rem;}
+}
+@media screen and (max-height: 690px){
+    .slider_1998--2 .image{margin-bottom: -20rem;}
+    .slider_2003 .image{max-width: 440px;}
+}
+@media screen and (min-width:961px){
+    /* .click_expand img{transition: all 1.4s ease;}
+    .click_expand:hover img{transform: scale(1.02);} */
+}
+@keyframes move-horizontal{
+    from{-webkit-transform:translateX(15px);transform:translateX(15px)}
+    to{-webkit-transform:translateX(-15px);transform:translateX(-15px)}
+}
+@keyframes click-animation{
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(0.8);
+    }
+}

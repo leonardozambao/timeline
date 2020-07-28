@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable = 0, initial-scale=1.0, maximum-scale=1.0">
+    <title>timeline</title>
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gmv6zbr.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/slick.min.js"></script>
+</head>
+
+<body>
+    <section class="nossa_historia">
+        <a href="javascript:void(0);" onclick="sairTimeline();" class="slider_sair">SAIR DA TIMELINE</a>
+        <div class="slider slick-slider">
+            <div class="slider_item slider_template--cover" id="cover">
+                <picture>
+                    <!-- <source media="(min-width: )" srcset=""> -->
+                    <img src="images-timeline/slider1.jpg" alt="Nossa História" class="banner">
+                </picture>
+                <div class="slider_container">
+                    <div id="first-parallax">
+                        <article data-depth="0.3">
+                            <h2 class="title">
+                                NOSSA <span><i>História</i></span>
+                            </h2>
+                            <p class="text margin-right">
+                                <i>Desde <span class="big">1970</span><br>
+                                    transformando<br>
+                                    sonhos em histórias</i>
+                            </p>
+                        </article>
+                    </div>
+                    <span class="vertical_line"></span>
+                    <div class="slider_explorar flex-box direction-column align-center">
+                        <img src="images-timeline/arraste-ico.png" alt="Clique e arraste com o mouse"
+                            title="Clique e arraste com o mouse" class="arraste">
+                        <p class="text text-center">
+                            PARA EXPLORAR A LINHA DO TEMPO<br>
+                            <span><i>Segure e arraste o mouse</i></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_1970" id="y1970">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    1971
+                </a>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider2-hidden.jpg" alt="Ézaro Fabian" class="banner">
+                    <div class="slider_container">
+                        <p class="text quote">
+                            "Ter pessoas que desejam fazer parte do seu<br>
+                            sonho é algo que só se consegue com muito<br>
+                            trabalho, ética e exemplo."
+                            <span class="autor">Ézaro Fabian</span>
+                            <small>Fundador do Grupo Plaenge</small>
+                        </p>
+                    </div>
+                </div>
+                <span class="year_line year_line--half_right"></span>
+                <div class="slider_container">
+                    <div class="flex-box align-center">
+                        <figure class="click_expand" title="Clique aqui para expandir a imagem"
+                            onclick="expandHidden('#y1970');">
+                            <img src="images-timeline/slider2.png" alt="Ézaro Fabian" class="image">
+                            <span class="slider_year--big" style="pointer-events:none;">1970</span>
+
+                        </figure>
+                        <article class="right_double">
+                            <h2 class="title">O INÍCIO<br> DE UM<br>
+                                <span><i>grande <br>sonho</i></span>
+                            </h2>
+                            <p class="text quote"><i>
+                                    A nossa história nasceu do sonho de Ézaro Fabian, um jovem engenheiro que aos 30
+                                    anos teve a ousadia de empreender e inaugurar uma história que trazemos com orgulho
+                                    até hoje, nas novas gerações desta empresa. Uma tradição de construir com
+                                    excelência, respeito e integridade.
+                                </i></p>
+                        </article>
+                    </div>
+                    <div class="slider_expandir flex-box direction-column align-center"
+                        onclick="expandHidden('#y1970');">
+                        <img src="images-timeline/click-ico.png" alt="Clique para expandir a imagem"
+                            title="Clique para expandir a imagem" class="">
+                        <p class="text text-center">
+                            CLIQUE NA IMAGEM PARA ABRIR
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_1971" id="y1971">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    1970
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    1974
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_container container--align_start">
+                    <h2 class="title">
+                        NOSSA PRIMEIRA
+                        <span><i>grande obra</i></span>
+                    </h2>
+                    <img src="images-timeline/slider3.png" alt="Fábrica da Coca-Cola - 1971" class="image image--full">
+                    <div class="flex-box justify-center row">
+                        <span class="slider_year--big">1971</span>
+                        <p class="text quote">
+                            A fábrica da Coca-Cola, construída na região<br> metropolitana de Londrina, foi a nossa<br>
+                            primeira grande obra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_1974" id="y1974">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    1971
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    1983
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider4-hidden.jpg" alt="Edificio Olga" class="image--expanded">
+                </div>
+                <div class="slider_container">
+                    <div class="flex-box align-center">
+                        <figure class="click_expand" title="Clique aqui para expandir a imagem"
+                            onclick="expandHidden('#y1974');">
+                            <img src="images-timeline/slider4.png" alt="Edificio Olga" class="image">
+                        </figure>
+                        <article class="right_double">
+                            <h2 class="title">NOSSO PRIMEIRO<br>
+                                <span><i>edifício<br>residencial</i></span>
+                            </h2>
+                            <p class="text quote"><i>
+                                    O edifício Olga foi nosso primeiro<br>
+                                    empreendimento imobiliário, construído<br>
+                                    no centro de Londrina com 12 andares.
+                                </i>
+                                <span class="slider_year--big">1974</span>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_1983" id="y1983">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    1974
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    1988
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider5-hidden.jpg" alt="Cuiabá" class="banner">
+                </div>
+                <div class="slider_container">
+                    <div class="flex-box align-center">
+                        <figure class="click_expand" title="Clique aqui para expandir a imagem"
+                            onclick="expandHidden('#y1983');">
+                            <img src="images-timeline/slider5.png" alt="Cuiabá" class="image image--full">
+                        </figure>
+                        <article class="right_double" style="width: auto;">
+                            <h2 class="title">INICIAMOS<br>NOSSAS
+                                <span><i>atividades<br>em Cuiabá</i></span>
+                            </h2>
+                            <p class="text quote"><i>
+                                    A capital mato-grossense foi escolhida para ser a<br> primeira cidade a receber uma
+                                    regional da marca<br> Plaenge. Na Cidade Verde, a nossa empresa criou<br> raízes e
+                                    construiu mais do que edifícios:<br>
+                                    consolidou um nome e também se tornou<br>
+                                    referência empresarial do estado de Mato Grosso.
+                                </i>
+                                <span class="slider_year--big">1983</span>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_1988" id="y1988">
+                <picture>
+                    <!-- <source media="(min-width: )" srcset=""> -->
+                    <img src="images-timeline/slider6.jpg" alt="Chegamos em Campo Grande" class="banner">
+                </picture>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    1983
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    1993
+                </a>
+                <div class="slider_container container--align_end">
+                    <div class="flex-box row">
+                        <span class="slider_year--big">1988</span>
+                        <article>
+                            <h2 class="title">CHEGAMOS EM
+                                <span><i>Campo Grande</i></span>
+                            </h2>
+                            <p class="text quote"><i>
+                                    Na Cidade Morena aprendemos muito a partir do
+                                    comportamento cultural e do estilo de morar dos
+                                    campo-grandenses. Inspirações que contribuíram para criarmos
+                                    diversas inovações que mudaram o mercado imobiliário
+                                    nacional, como o conceito de plantas flexíveis e as grandes
+                                    sacadas com churrasqueira.
+                                </i>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_1993" id="y1993">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    1988
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    1995
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_container container--align_start">
+                    <h2 class="title">
+                        INICIAMOS NOSSO
+                        <span><i>Programa de<br> informatização</i></span>
+                    </h2>
+                    <img src="images-timeline/slider7.png" alt="Iniciamos nosso programa de informatização"
+                        class="image">
+                    <div class="flex-box justify-center row">
+                        <span class="slider_year--big">1993</span>
+                        <p class="text quote">
+                            Fomos pioneiros na construção civil a<br>
+                            utilizar redes de microcomputadores,<br>
+                            intranet e controle digital das informações.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_1995" id="y1995">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    1993
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    1998
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider8-hidden.jpg" alt="Central Park - Campo Grande"
+                        class="image--expanded">
+                </div>
+                <div class="slider_container">
+                    <div class="flex-box align-center">
+                        <article class="right_double">
+                            <h2 class="title">
+                                CRIAMOS O<br>
+                                SISTEMA DE
+                                <span><i>
+                                        Plantas<br>
+                                        Flexíveis
+                                    </i></span>
+                            </h2>
+                            <p class="text quote"><i>
+                                    Registrado no INPI, e mais tarde adotado por
+                                    todo o mercado imobiliário, nosso sistema
+                                    permite ao cliente escolher o modelo de planta
+                                    mais adequado às suas necessidades e ao estilo
+                                    de morar. Central Park em Campo Grande foi o
+                                    primeiro empreendimento a contar com essa
+                                    inovação. Desde então, cada Plaenge é um
+                                    apartamento único.
+                                </i>
+                                <span class="slider_year--big">1995</span>
+                            </p>
+                        </article>
+                        <figure class="col_02 click_expand" title="Clique aqui para expandir a imagem"
+                            onclick="expandHidden('#y1995');">
+                            <img src="images-timeline/slider8.png" alt="Central Park - Campo Grande"
+                                class="image image--full">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_1998" id="y1998">
+                <picture>
+                    <!-- <source media="(min-width: )" srcset=""> -->
+                    <img src="images-timeline/slider9.jpg" alt="Seguro de entrega" class="banner">
+                </picture>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    1995
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    &nbsp;
+                </a>
+                <div class="slider_container">
+                    <div class="flex-box row">
+                        <span class="slider_year--big">1998</span>
+                        <article>
+                            <h2 class="title">CRIAMOS O<br> SEGURO DE
+                                <span><i>Entrega<br> de Obra</i></span>
+                            </h2>
+                            <p class="text quote"><i>
+                                    Para ampliar a tranquilidade e a<br>
+                                    segurança dos clientes ao realizar o sonho<br>
+                                    de comprar um Plaenge, iniciamos<br>
+                                    parcerias com seguradoras internacionais<br>
+                                    para oferecer o Seguro de Entrega de Obra.<br>
+                                    Até hoje, somos a única construtora do<br>
+                                    Brasil a oferecer esse diferencial em todos<br>
+                                    os nossos empreendimentos.
+                                </i>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_1998--2" id="y1998--2">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    &nbsp;
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    2003
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/background.jpg" class="banner">
+                    <div class="slider_container">
+                        <div class="flex-box align-center">
+                            <img src="images-timeline/slider9-hidden.png" alt="Luiza Bohrer" class="col_02">
+                            <p class="text quote">
+                                "No decorado, nós colocamos elementos da<br>
+                                vida real, para que a pessoa entre e se sinta<br>
+                                em casa. Cada decorado conta uma história."
+                                <span class="autor">Luiza Bohrer</span>
+                                <small>Arquiteta responsável pelos projetos de interiores da Plaenge.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_container container--align_start">
+                    <h2 class="title">
+                        O CONCEITO DE
+                        <span><i>Central de<br>Decorados</i></span>
+                    </h2>
+                    <img src="images-timeline/slider9.png" alt="Central de decorados - Maringá"
+                        class="image image--full">
+                    <div class="flex-box justify-flex-end row" style="width: 100%;">
+                        <article>
+                            <div class="flex-box justify-flex-end align-start hold_year">
+                                <span class="slider_year--big">1998</span>
+                                <a href="javascript:void(0);" title="Clique para interagir"
+                                    onclick="expandHidden('#y1998--2');">
+                                    <img src="images-timeline/expand.png" alt="Ver mais" class="expandir">
+                                </a>
+                            </div>
+                            <p class="text quote">
+                                Inovamos ao criar um local único para apresentar<br>
+                                os apartamentos decorados de nossos <br>
+                                empreendimentos. Este conceito permitiu aos<br>
+                                nossos clientes conhecer diferentes plantas em um<br>
+                                único local, conferindo em tamanho real o<br>
+                                aproveitamento dos espaços de cada ambiente.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="slider_expandir flex-box direction-column align-center"
+                    onclick="expandHidden('#y1998--2');">
+                    <img src="images-timeline/click-ico.png" alt="Clique no '+' para interagir"
+                        title="Clique no '+' para interagir" class="">
+                    <p class="text text-center">
+                        CLIQUE NO "+" PARA INTERAGIR
+                    </p>
+                </div>
+            </div>
+            <div class="slider_item slider_2003" id="y2003">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    1998
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    2008
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider10-hidden.jpg" class="banner">
+                </div>
+                <div class="slider_container container--align_start">
+                    <h2 class="title">
+                        INICIAMOS NOSSAS
+                        <span><i>atividades em<br> Curitiba</i></span>
+                    </h2>
+                    <img src="images-timeline/slider10.png" alt="Jardim Botânico" class="image click_expand"
+                        title="Clique aqui para expandir a imagem" onclick="expandHidden('#y2003');">
+                    <div class="flex-box justify-center row">
+                        <span class="slider_year--big">2003</span>
+                        <p class="text quote">
+                            No competitivo mercado de Curitiba, projetamos<br>
+                            empreendimentos de alto padrão que<br>
+                            contribuíram para o desenvolvimento e a<br>
+                            consolidação do Ecoville, atualmente uma das<br>
+                            regiões mais valorizadas da capital paranaense.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_2008" id="y2008">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    2003
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    2009
+                </a>
+                <img src="images-timeline/slider11.jpg" alt="Maringá" class="banner">
+                <div class="slider_container container--align_start">
+                    <h2 class="title">
+                        INICIAMOS A NOSSA
+                        <span><i>história em <br>Maringá</i></span>
+                    </h2>
+                    <p class="text quote">
+                        Classificado como um dos municípios com melhor<br>
+                        Índice de Desenvolvimento Humano (IDH) do<br>
+                        país, escolhemos Maringá para ser a terceira<br>
+                        cidade paranaense a receber nossa marca.
+                    </p>
+                    <span class="slider_year--big">2008</span>
+                </div>
+            </div>
+            <div class="slider_item slider_2009" id="y2009">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    2008
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    2010
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/background.jpg" class="banner">
+                    <div class="slider_container">
+                        <div class="flex-box align-center">
+                            <img src="images-timeline/slider12-hidden.png" alt="Fernando Fabian" class="col_02 image">
+                            <p class="text quote">
+                                "Nós aprendemos muito com as diferentes<br>
+                                cidades em que atuamos no Brasil e agora<br>
+                                também estamos aprendendo com o Chile.<br>
+                                Trocando e mesclando experiências entre <br>
+                                os profissionais, levamos inovações e<br>
+                                desenvolvemos projetos específicos para<br>
+                                os moradores deste país."
+                                <span class="autor">Fernando Fabian</span>
+                                <small>Diretor da Plaenge.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_hidden_content2" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider12-hidden2.jpg" class="banner">
+                </div>
+                <div class="slider_container container--align_start">
+                    <h2 class="title">
+                        CHEGAMOS
+                        <span><i>ao Chile</i></span>
+                    </h2>
+                    <a href="javascript:void(0);" title="Clique para interagir" >
+                        <img src="images-timeline/expand.png" alt="Ver mais" class="expandir" onclick="expandHidden('#y2009');">
+                    </a>
+                    <img src="images-timeline/slider12.jpg" alt="Chile" class="image image--full" onclick="expandHidden2('#y2009')">
+                    <div class="flex-box justify-center row">
+                        <span class="slider_year--big">2009</span>
+                        <p class="text quote">
+                            O nosso sonho de estar em constante evolução<br>
+                            e aprendizado foi decisivo para escolhermos o<br>
+                            Chile, um país com instituições fortes e<br>
+                            economia madura e estável.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_2010" id="y2010">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    2009
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    2014
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/background.jpg" class="banner">
+                    <div class="slider_container">
+                        <div class="flex-box align-center">
+                            <img src="images-timeline/slider13-hidden.png" alt="Alexandre Fabian" class="col_02 image">
+                            <p class="text quote">
+                                "Criamos este livro para registrar a nossa<br>
+                                história, compartilhar com as novas gerações a<br>
+                                filosofia e os valores consolidados com a ajuda do<br>
+                                importante trabalho de centenas de pessoas."
+                                <span class="autor">Alexandre Fabian</span>
+                                <small>Diretor da Plaenge.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_hidden_content2" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider13-hidden2.png" class="banner">
+                </div>
+                <div class="slider_container">
+                    <a href="javascript:void(0);" title="Clique para interagir" onclick="expandHidden('#y2010');">
+                        <img src="images-timeline/expand.png" alt="Ver mais" class="expandir">
+                    </a>
+                    <div class="flex-box align-center">
+                        <figure class="">
+                            <img src="images-timeline/slider13.jpg" alt="Construção do Sonho" class="image" onclick="expandHidden2('#y2010')">
+                        </figure>
+                        <article class="right_double">
+                            <h2 class="title">PUBLICAMOS O LIVRO<br>
+                                <span><i>"A construção<br> do sonho"</i></span>
+                            </h2>
+                            <p class="text quote"><i>
+                                    Para celebrar 40 anos de atuação, criamos o<br>
+                                    livro que conta um pouco da história, filosofia<br>
+                                    e nossos valores. A publicação foi escrita por<br>
+                                    Paulo Briguet e Domingos Pellegrini a partir<br>
+                                    de depoimentos de diretores, colaboradores,<br>
+                                    clientes e parceiros.
+                                </i>
+                                <span class="slider_year--big">2010</span>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_2014" id="y2014">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    2010
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    2016
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider14-hidden.jpg" class="banner">
+                </div>
+                <div class="slider_container container--align_start">
+                    <h2 class="title">
+                        INICIAMOS NA ÁREA DE
+                        <span><i>desenvolvimento<br> urbano</i></span>
+                    </h2>
+                    <img src="images-timeline/slider14.jpg" alt="" class="image image--full click_expand"
+                        title="Clique para expandir a imagem" onclick="expandHidden('#y2014');">
+                    <div class="flex-box justify-center row">
+                        <span class="slider_year--big">2014</span>
+                        <p class="text quote">
+                            Começamos a atuar no segmento de<br>
+                            desenvolvimento urbano, focado em<br>
+                            bairros planejados, condomínios<br>
+                            fechados e loteamentos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_2016" id="y2016">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    2014
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    &nbsp;
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider15-hidden.jpg" class="image--expanded">
+                </div>
+                <div class="slider_container">
+                    <div class="flex-box align-center">
+                        <article class="right_double">
+                            <span class="slider_year--big">2016</span>
+                            <div>
+                                <h2 class="title">CHEGAMOS NA<br>
+                                    <span><i>capital<br>Santiago</i></span>
+                                </h2>
+                                <p class="text quote"><i>
+                                        Adquirimos um terreno estratégico na<br>
+                                        cidade de Santiago, marcando um novo<br>
+                                        e importante ciclo de expansão da <br>
+                                        empresa no Chile.
+                                    </i>
+                                </p>
+                            </div>
+                        </article>
+                        <figure class="click_expand col_02" title="Clique para expandir a imagem"
+                            onclick="expandHidden('#y2016');">
+                            <img src="images-timeline/slider15.png" alt="Santiago - Chile" class="image image--full">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_2016_2" id="y2016_2">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    &nbsp;
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    2019
+                </a>
+                <img src="images-timeline/slider16.jpg" alt="Ingo Glawe e Marcelo Resquetti" class="banner">
+                <div class="slider_hidden_content_video" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem">
+                        <img src="images-timeline/close.png" alt="X">
+                    </a>
+                    <div class="flex-box align-center justify-center">
+                        <div class="video_container">
+                            <iframe src="" frameborder="0" allow="autoplay" allowfullscreen="" title=""
+                                data-ready="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_container container--align_start">
+                    <div class="flex-box  align-center">
+                        <span class="slider_year--big">2016</span>
+                        <a href="javascript:void(0);" title="Clique para interagir"
+                            onclick="expandHiddenVideo('#y2016_2', 'https://player.vimeo.com/video/397422944');">
+                            <img src="images-timeline/expand.png" alt="Ver mais" class="expandir">
+                        </a>
+                    </div>
+                    <div>
+                        <h2 class="title">PARCERIA COM A<br>
+                            <span><i>Porsche<br> Consulting</i></span>
+                        </h2>
+                        <p class="text quote"><i>
+                                Aprimoramos e inovamos nos processos<br>
+                                construtivos de nossos empreendimentos em<br>
+                                parceria com a renomada consultoria<br>
+                                internacional Porsche Consulting. Técnicas<br>
+                                de gestão de última geração da indústria <br>
+                                automobilística alemã foram trazidas às<br>
+                                nossas obras e produtos no Brasil.
+                            </i>
+                        </p>
+                    </div>
+                    <p class="names">
+                        Ingo Glawe,
+                        <span>Partner Porsche Consulting</span>
+                        Marcelo Resquetti,
+                        <span>Diretor da Plaenge</span>
+                    </p>
+                </div>
+            </div>
+            <div class="slider_item slider_2019" id="y2019">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    2016
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    &nbsp;
+                </a>
+                <img src="images-timeline/slider17.jpg" alt="Campinas - SP" class="banner">
+                <div class="slider_container">
+                    <div class="flex-box align-start">
+                        <span class="slider_year--big">2019</span>
+                        <div>
+                            <h2 class="title">INICIAMOS AS<br> ATIVIDADES EM<br>
+                                <span><i>Campinas</i></span>
+                            </h2>
+                            <p class="text quote"><i>
+                                    Escolhemos Campinas para construir nosso<br>
+                                    primeiro empreendimento no estado de São Paulo. A<br>
+                                    cidade é reconhecida por ser uma potência<br>
+                                    econômica, industrial e cultural, além da alta<br>
+                                    qualidade de produção científica.
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_2019_2" id="y2019_2">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    &nbsp;
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="slickNext();">
+                    2020
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider18-hidden.jpg" class="banner">
+                </div>
+                <div class="slider_container container--align_start">
+                    <h2 class="title">
+                        LANÇAMENTO DO PRIMEIRO
+                        <span><i>Condomínio fechado</i></span>
+                    </h2>
+                    <img src="images-timeline/slider18.jpg" alt="Riviera Home Club" class="image click_expand"
+                        title="Clique para expandir a imagem" onclick="expandHidden('#y2019_2');">
+                    <div class="flex-box justify-center row">
+                        <span class="slider_year--big">2019</span>
+                        <p class="text quote">
+                            Com o lançamento do Riviera Home Club<br>
+                            inauguramos a ampliação de negócios que ocorreu<br>
+                            no segmento de Desenvolvimento Urbano, sendo o <br>
+                            nosso primeiro empreendimento imobiliário<br>
+                            horizontal de alto padrão em Campo Grande.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item slider_2020" id="y2020">
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--prev" title="Anterior"
+                    onclick="slickPrev();">
+                    2019
+                </a>
+                <a href="javascript:void(0);" class="arrow_slider arrow_slider--next" title="Próximo"
+                    onclick="sairTimeline();">
+                    Voltar
+                </a>
+                <span class="year_line"></span>
+                <div class="slider_hidden_content" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                    <img src="images-timeline/slider19-hidden.jpg" class="banner">
+                </div>
+                <div class="slider_hidden_content2" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
+                            src="images-timeline/close.png" alt="X"></a>
+                            <img src="images-timeline/background.jpg" class="banner">
+                    <div class="slider_container">
+                        <div class="flex-box align-center">
+                            <img src="images-timeline/slider19-hidden2.png" alt="Ezaro Fabian" class="col_02 image">
+                            <p class="text quote">
+                                "A Plaenge começou tão pequena que cabia numa sala, mas chega aos 50 anos como a maior
+                                construtora do Sul do Brasil. Isso só foi possível contando com gente que também segue
+                                nossos princípios: fazer o certo, ser útil, cumprir a palavra e perseverar.
+                                <br><br>
+
+                                Nossa filosofia sempre valorizou a visão de longo prazo. Completamos cinquenta anos de
+                                trajetória alicerçada em valores presentes desde as origens sobretudo a confiança nas
+                                relações com nossos clientes.
+                                <br><br>
+
+                                Confiança construída por colaboradores que se dedicaram às inumeras superações destas
+                                cinco décadas desde a hiper inflação, os inúmeros planos econômicos, a estagnação dos
+                                anos 80, o Plano Real até movimentos mundiais como a abertura de mercado com a
+                                globalização e a internet.
+                                <br><br>
+
+                                Confiança que construímos com cada cliente que entrega em nossas mãos o seu sonho de
+                                viver com classe, conforto e elegância."
+
+                                <span class="autor">Ezaro Fabian, Fundador</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_hidden_content_video" style="display: none;">
+                    <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem">
+                        <img src="images-timeline/close.png" alt="X">
+                    </a>
+                    <div class="flex-box align-center justify-center">
+                        <div class="video_container">
+                            <iframe src="" frameborder="0" allow="autoplay" allowfullscreen="" title=""
+                                data-ready="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_container container--align_start">
+                    <div class="flex-box align-center">
+                        <figure class="click_expand" title="Clique para expandir a imagem"
+                            onclick="expandHidden('#y2020');">
+                            <img src="images-timeline/slider19.jpg" alt="" class="image--full image">
+                            <span class="slider_year--big" style="pointer-events:none;">2020</span>
+                        </figure>
+                        <article class="col">
+                            <h2 class="title">
+                                50 ANOS
+                                <span><i>
+                                        construindo<br> histórias de<br> confiança
+                                    </i></span>
+                            </h2>
+                            <div class="veja_video flex-box align-center text" style="cursor: pointer;"
+                                onclick="expandHiddenVideo('#y2020', 'https://player.vimeo.com/video/397422944')">
+                                <img src="images-timeline/play-button.png" alt="Ver vídeo" class="play_button">
+                                <p class=""><i>Veja o vídeo de 50 Anos.</i></p>
+                            </div>
+                            <div class="interagir flex-box flex-align-end">
+                                <img src="images-timeline/50anos.png" alt="50 anos Plaenge" class="logo_anos">
+                                <img src="images-timeline/expand.png" alt="Expandir" class="expandir"
+                                    style="cursor: pointer;" onclick="expandHidden2('#y2020')">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- slick-slider -->
+        <script>
+            $(document).ready(function () {
+                $('.slick-slider').slick({
+                    infinite: true,
+                    arrows: false,
+                });
+                var scene = document.getElementById('first-parallax');
+                var parallaxInstance = new Parallax(scene);
+
+                $('.slick-slider').on('afterChange', function () { //fechar conteudos ocultos ao mover o slider
+                    closeHidden();
+                })
+
+            });
+
+            function expandHidden(target) {
+                $(target).find('.slider_hidden_content').fadeIn(800);
+            }
+            function expandHidden2(target) {
+                $(target).find('.slider_hidden_content2').fadeIn(800);
+            }
+            function expandHiddenVideo(target, url) {
+                $(target).find('.slider_hidden_content_video').fadeIn(800);
+                $(target).find('iframe').attr('src', url);
+            }
+
+            function closeHidden() {
+                $('.slider_hidden_content, .slider_hidden_content_video, .slider_hidden_content2').fadeOut(800);
+                $('.slider_hidden_content_video iframe').attr('src', '');
+            }
+            function slickNext() {
+                $('.slick-slider').slick('slickNext');
+                closeHidden();
+            }
+            function slickPrev() {
+                $('.slick-slider').slick('slickPrev');
+                closeHidden();
+            }
+            function sairTimeline() {
+                $('.slick-slider').slick("slickGoTo", 0);
+            }
+
+            document.querySelector('body').addEventListener('keydown', function (event) {
+
+                var tecla = event.keyCode;
+
+                if (tecla == 13) {
+                    // tecla ENTER
+
+                } else if (tecla == 27) {
+                    closeHidden();
+                    // tecla ESC
+                }
+            });
+
+        </script>
+    </section>
+</body>
+
+</html>
