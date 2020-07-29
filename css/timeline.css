@@ -166,7 +166,7 @@ html{font-size: 62.5%;}
 
 @media screen and (max-width: 1600px){
     html{font-size: 50%;}
-    .slider_container{padding: 15px;}
+    .slider_container{padding: 0 15px;}
     .slider_template--cover .text.margin-right{position: relative;right: -4.2rem;}
 }
 @media screen and (max-height: 690px){
@@ -182,7 +182,7 @@ html{font-size: 62.5%;}
     .slider_item{overflow: hidden;}
     .slider_sair{color: transparent;background: url('../images-timeline/voltar.png') no-repeat;left: unset;bottom: unset;top: 20px;right: 20px;background-position: right;background-size: 25px;}
     .nossa_historia .arraste{width: 2.5rem;}
-    .nossa_historia .year_line{top: 45vh;}
+    .nossa_historia .year_line{top: 43vh;}
     .slider_item .slider_explorar  .text{font-size: 1.7rem;letter-spacing: 0.08em;}
     .slider_item.slider_template--cover .title{font-size: 5rem;}
     .slider_item.slider_template--cover .title span{font-size: 9rem;}
@@ -195,8 +195,8 @@ html{font-size: 62.5%;}
     .slider_1970 figure{position: static;}
     .slider_1970 .image{position: absolute;left: -140px;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);width: 360px;}
     .slider_1970 .right_double{width: 80%;z-index: 2;padding-left: 0;}
-    .slider_item .right_double > *{height: 60%;}
-    .slider_item .right_double > *:first-child {height: 43%;}
+    .slider_item .right_double > *{height: 57vh;}
+    .slider_item .right_double > *:first-child {height: 43vh;}
     .slider_item.slider_1970 .right_double > *:first-child {padding-bottom: 5rem;}
     .slider_item.slider_1970 .right_double > *:last-child {padding-top: 5rem;}
     .slider_item .text{font-size: 1.8rem;}
@@ -230,7 +230,7 @@ html{font-size: 62.5%;}
     .slider_1971 .text br,
     .slider_2016 article .text br,
     .slider_1983 .text br{display: none;}
-    .slider_item.slider_1983 .right_double > *:first-child{padding-bottom: 0;}
+    .slider_item.slider_1983 .right_double > *:first-child{padding-bottom: 4rem;}
     .slider_1983 .title{position: relative;left: -30px;}
     .slider_1983 .text{padding-right: 20px;}
     .slider_1988 .banner{height: 50%;}
@@ -298,6 +298,6 @@ html{font-size: 62.5%;}
     .arrow_slider{font-size: 2.5rem;}
 }
 @media screen and (max-width:960px) and (max-height:690px){
-    .nossa_historia .year_line {top: 43vh;}
-    .slider_item .right_double > *:first-child {height: 41%;}
+    .nossa_historia .year_line {/* top: 43vh; */}
+    .slider_item .right_double > *:first-child {/* height: 41%; */}
 }
