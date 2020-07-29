@@ -144,6 +144,9 @@ html{font-size: 62.5%;}
 .slider_2020 .year_line{width: 50%;right: unset;left: 0;}
 .slider_2020 .slider_hidden_content2 .image{padding-right: 5rem;}
 .slider_2020 .image--vertical{max-height: 90vh;object-fit: contain;}
+.slider_2010 .slider_hidden_content .image,
+.slider_2009 .slider_hidden_content .image{filter: grayscale(1);}
+.slider_2010 .slider_year--big{display: block;}
 
 @media screen and (max-width: 1600px){
     html{font-size: 50%;}
@@ -163,11 +166,114 @@ html{font-size: 62.5%;}
     .slider_item{overflow: hidden;}
     .slider_sair{color: transparent;background: url('../images-timeline/voltar.png') no-repeat;left: unset;bottom: unset;top: 20px;right: 20px;background-position: right;background-size: 25px;}
     .nossa_historia .arraste{width: 2.5rem;}
+    .nossa_historia .year_line{top: 43%;}
     .slider_item .slider_explorar  .text{font-size: 1.7rem;letter-spacing: 0.08em;}
     .slider_item.slider_template--cover .title{font-size: 5rem;}
     .slider_item.slider_template--cover .title span{font-size: 9rem;}
     .slider_template--cover .text.margin-right {right: -1.2rem;}
     .slider_1970 .year_line::before{width: 7rem;height: 7rem;}
     .slider_1970 .year_line::after{display: none;}
-    
+    .slider_expandir img{width: 2rem;}
+    .slider_expandir{bottom: unset;top: 20px;left: 20px;width: 100px;align-items: flex-start!important;}
+    .slider_expandir .text{text-align: left;line-height: 1.2em;}
+    .slider_1970 figure{position: static;}
+    .slider_1970 .image{position: absolute;left: -140px;top: 50%;transform: translateY(-50%);width: 360px;}
+    .slider_1970 .right_double{width: 80%;z-index: 2;padding-left: 0;}
+    .slider_item .right_double > *{height: 60%;}
+    .slider_item .right_double > *:first-child {height: 40%;}
+    .slider_item.slider_1970 .right_double > *:first-child {padding-bottom: 5rem;}
+    .slider_item.slider_1970 .right_double > *:last-child {padding-top: 5rem;}
+    .slider_item .text{font-size: 1.8rem;}
+    .slider_year--big{bottom: 10px!important;font-size: 7rem;position: absolute;width: 100%;left: 0;text-align: center;line-height: 1em!important;z-index: 2;}
+    .arrow_slider{top: unset;bottom: 15px;display: flex;left: 20px;align-items: center;font-size: 3rem;}
+    .arrow_slider--next{flex-direction: row-reverse;left:unset;right: 20px;}
+    .arrow_slider::after{width: 1.5rem;height: 2.5rem;margin: 0 2px 0 6px;}
+    .slider_1970 .slider_hidden_content{background: url('../images-timeline/background.jpg') no-repeat;background-size: cover;}
+    .slider_1970 .slider_hidden_content .banner{height: 50%;top: unset;bottom: 0;}
+    .slider_1970 .slider_hidden_content .slider_container{justify-content: flex-start;padding-top: 120px;}
+    .close_hidden{top: 20px;right: unset;left: 20px;}
+    .slider_1971 .image{margin: 0 0 4rem 0;}
+    .slider_1971 .title{margin-top: -50px;}
+    .slider_1974 .right_double > *{height: auto!important;padding: 1rem 0!important;}
+    .slider_1974 .right_double{width: 100%;padding-left: 0;}
+    .slider_1974 figure{width: 60%;margin:0 auto;}
+    .slider_1974 .image--vertical{max-height: 72vh;}
+    .slider_hidden_content .image--expanded{width: 100%;height: 100%;}
+    .slider_1983 .image{width: 150px;object-fit: cover;}
+    .slider_1983 .right_double{padding-left: 0;}
+    .slider_2016_2 .names,
+    .slider_2019_2 .year_line,
+    .slider_1998--2 .text br,
+    .slider_2009 .text br,
+    .slider_2008 .text br,
+    .slider_2003 .text br,
+    .slider_1998 .text br,
+    .slider_2010 .text br,
+    .slider_2019 .text br,
+    .slider_2019_2 .text br,
+    .slider_1971 .text br,
+    .slider_2016 article .text br,
+    .slider_1983 .text br{display: none;}
+    .slider_item.slider_1983 .right_double > *:first-child{padding-bottom: 0;}
+    .slider_1983 .title{position: relative;left: -30px;}
+    .slider_1983 .text{padding-right: 20px;}
+    .slider_1988 .banner{height: 50%;}
+    .slider_1988 .slider_container{padding-bottom: 80px;}
+    .slider_1993 .image{width: 200px;}
+    .slider_1995 .right_double{width: 100%;padding-left: 0;z-index: 2;}
+    .slider_1995 figure{position: absolute;bottom: 0;left: -60px;}
+    .slider_1995 .text{width: 60%;margin: 0 0 0 auto;}
+    .slider_1995 .image{height: 60vh;width: auto;}
+    .slider_1998--2 .image{margin: -2rem 0 0;}
+    .slider_1998--2 .expandir{width: 7rem;margin: 0 2rem 0 0;}
+    .slider_1998--2 .slider_expandir{flex-direction: row;align-items: center!important;width: 200px;}
+    .slider_1998--2 .slider_expandir img{margin-right: 1rem;}
+    .slider_2003 .image{max-width: 100%;}
+    .slider_2009 .expandir{position: static;transform: none;width: 7rem;}
+    .slider_2009 .slider_container{padding: 15px 0;}
+    .slider_2009 .title{padding-left: 15px;}
+    .slider_2009 .image{margin: 2rem 0;}
+    .slider_2010 .slider_hidden_content .image,
+    .slider_2009 .slider_hidden_content .image{position: absolute;right: -90px;width: 270px;bottom: 0;}
+    .slider_2010 .slider_hidden_content .text,
+    .slider_2009 .slider_hidden_content .text{width: 60%;padding-left: 15px;z-index: 2;}
+    .slider_1983 .title span{font-size: 4.5rem;}
+    .slider_2014 .slider_container,
+    .slider_1983 .slider_container{padding: 0;}
+    .slider_2010 .image--vertical{position: absolute;top: 0;left: 0;z-index: -1;filter: brightness(0.5);}
+    .slider_2010 .right_double{width: 100%;padding-left: 0;}
+    .slider_2010 .expandir{position: static;transform: none;width: 7rem;margin-right: 2rem;}
+    .slider_2010 .mob_row{flex-direction: row;}
+    .slider_2010 figure{width: auto;}
+    .slider_2014 .title{padding-left: 15px;font-size: 3rem;}
+    .slider_2014 .title span{font-size: 4.9rem;}
+    .slider_2014 .image{margin: 4rem 0;}
+    .slider_2014 .year_line{display: none;}
+    .slider_2016 figure{position: absolute;left: 0;bottom: 120px;width: 70%!important;filter: brightness(0.7);}
+    .slider_2016 .right_double{width: 100%;padding-left: 0;z-index: 2;}
+    .slider_2016 .slider_container{justify-content: flex-start;}
+    .slider_2016 article .text{position: absolute;right:10px;bottom: 200px;width: 200px;}
+    .slider_2016 .slider_container > .flex-box{width: 100%;}
+    .slider_item.slider_2016 .right_double > *:first-child{padding-bottom: 0;}
+    .slider_2016_2 .banner{filter: brightness(0.5);}
+    .slider_2016_2 .expandir{width: 7rem;margin: 0 0 2rem 0;}
+    .slider_hidden_content_video .video_container {width: calc(100% - 30px);}
+    .slider_2019 .slider_year--big{position: absolute;margin: 0;top: unset;}
+    .slider_2019_2 .image{width: 100%;margin-top: 0;z-index: -1;margin-bottom: 2rem;}
+    .slider_2019_2 .slider_container{padding: 0;justify-content: flex-start;padding-top: 50px;}
+    .slider_2019_2 .title{padding-left: 15px;}
+    .slider_2020 figure{position: absolute;width: 100%;height: 100%;margin: 0;left: 0;top: 0;z-index: -1;}
+    .slider_2020 .image--vertical{max-height: 100%;object-fit: cover;filter: brightness(0.6);}
+    .slider_2020 .col{display: flex;flex-direction: column;}
+    .slider_2020 .interagir{order: 1;flex-direction: column;align-items: flex-start;margin-bottom: 2.5rem;}
+    .slider_2020 .title{order: 2;}
+    .slider_2020 .veja_video{order: 3;}
+    .slider_2020 .expandir, 
+    .slider_2020 .play_button {width: 7rem;}
+    .slider_2020 .logo_anos{margin-bottom: 2rem;width: 12rem;}
+    .slider_2008 .banner{filter: brightness(0.6);}
+}
+@media screen and (max-width:330px){
+    .slider_year--big{font-size: 5.4rem;}
+    .arrow_slider{font-size: 2.5rem;}
 }

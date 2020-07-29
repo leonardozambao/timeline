@@ -44,7 +44,7 @@
                     <div class="slider_explorar flex-box direction-column align-center">
                         <picture>
                             <source media="(min-width: 961px)" srcset="images-timeline/arraste-ico.png">
-                                <img src="images-timeline/arraste-ico-mobile.png" alt="Segure e arraste"
+                            <img src="images-timeline/arraste-ico-mobile.png" alt="Segure e arraste"
                                 title="Clique e arraste com o mouse" class="arraste">
                         </picture>
                         <p class="text text-center">
@@ -97,8 +97,11 @@
                     </div>
                     <div class="slider_expandir flex-box direction-column align-center"
                         onclick="expandHidden('#y1970');">
-                        <img src="images-timeline/click-ico.png" alt="Clique para expandir a imagem"
-                            title="Clique para expandir a imagem" class="">
+                        <picture>
+                            <source media="(min-width: 961px)" srcset="images-timeline/click-ico.png">
+                            <img src="images-timeline/click-ico-mobile.png" alt="Clique para expandir a imagem"
+                                title="Clique para expandir a imagem" class="">
+                        </picture>
                         <p class="text text-center">
                             CLIQUE NA IMAGEM PARA ABRIR
                         </p>
@@ -147,7 +150,7 @@
                 </div>
                 <div class="slider_container">
                     <div class="flex-box align-center">
-                        <figure class="click_expand" title="Clique aqui para expandir a imagem"
+                        <figure class="click_expand only-desktop" title="Clique aqui para expandir a imagem"
                             onclick="expandHidden('#y1974');">
                             <img src="images-timeline/slider4.png" alt="Edificio Olga" class="image">
                         </figure>
@@ -155,6 +158,11 @@
                             <h2 class="title">NOSSO PRIMEIRO<br>
                                 <span><i>edifício<br>residencial</i></span>
                             </h2>
+                            <figure class="click_expand only-mobile" title="Clique aqui para expandir a imagem"
+                                onclick="expandHidden('#y1974');">
+                                <img src="images-timeline/slider4.png" alt="Edificio Olga"
+                                    class="image image--vertical">
+                            </figure>
                             <p class="text quote"><i>
                                     O edifício Olga foi nosso primeiro<br>
                                     empreendimento imobiliário, construído<br>
@@ -386,25 +394,35 @@
                             <div class="flex-box justify-flex-end align-start hold_year">
                                 <span class="slider_year--big">1998</span>
                                 <a href="javascript:void(0);" title="Clique para interagir"
-                                    onclick="expandHidden('#y1998--2');">
+                                    onclick="expandHidden('#y1998--2');" class="only-desktop">
                                     <img src="images-timeline/expand.png" alt="Ver mais" class="expandir">
                                 </a>
                             </div>
-                            <p class="text quote">
-                                Inovamos ao criar um local único para apresentar<br>
-                                os apartamentos decorados de nossos <br>
-                                empreendimentos. Este conceito permitiu aos<br>
-                                nossos clientes conhecer diferentes plantas em um<br>
-                                único local, conferindo em tamanho real o<br>
-                                aproveitamento dos espaços de cada ambiente.
-                            </p>
+                            <div class="flex-box">
+                                <a href="javascript:void(0);" title="Clique para interagir"
+                                    onclick="expandHidden('#y1998--2');" class="only-mobile">
+                                    <img src="images-timeline/expand.png" alt="Ver mais" class="expandir">
+                                </a>
+                                <p class="text quote">
+                                    Inovamos ao criar um local único para apresentar<br>
+                                    os apartamentos decorados de nossos <br>
+                                    empreendimentos. Este conceito permitiu aos<br>
+                                    nossos clientes conhecer diferentes plantas em um<br>
+                                    único local, conferindo em tamanho real o<br>
+                                    aproveitamento dos espaços de cada ambiente.
+                                </p>
+
+                            </div>
                         </article>
                     </div>
                 </div>
                 <div class="slider_expandir flex-box direction-column align-center"
                     onclick="expandHidden('#y1998--2');">
-                    <img src="images-timeline/click-ico.png" alt="Clique no '+' para interagir"
-                        title="Clique no '+' para interagir" class="">
+                    <picture>
+                        <source media="(min-width: 961px)" srcset="images-timeline/click-ico.png">
+                        <img src="images-timeline/click-ico-mobile.png" alt="Clique para expandir a imagem"
+                            title="Clique para expandir a imagem" class="">
+                    </picture>
                     <p class="text text-center">
                         CLIQUE NO "+" PARA INTERAGIR
                     </p>
@@ -509,12 +527,15 @@
                         CHEGAMOS
                         <span><i>ao Chile</i></span>
                     </h2>
-                    <a href="javascript:void(0);" title="Clique para interagir" >
-                        <img src="images-timeline/expand.png" alt="Ver mais" class="expandir" onclick="expandHidden('#y2009');">
-                    </a>
-                    <img src="images-timeline/slider12.jpg" alt="Chile" class="image image--full" onclick="expandHidden2('#y2009')">
+
+                    <img src="images-timeline/slider12.jpg" alt="Chile" class="image image--full"
+                        onclick="expandHidden2('#y2009')">
                     <div class="flex-box justify-center row">
                         <span class="slider_year--big">2009</span>
+                        <a href="javascript:void(0);" title="Clique para interagir">
+                            <img src="images-timeline/expand.png" alt="Ver mais" class="expandir"
+                                onclick="expandHidden('#y2009');">
+                        </a>
                         <p class="text quote">
                             O nosso sonho de estar em constante evolução<br>
                             e aprendizado foi decisivo para escolhermos o<br>
@@ -558,27 +579,36 @@
                     <img src="images-timeline/slider13-hidden2.png" class="banner">
                 </div>
                 <div class="slider_container">
-                    <a href="javascript:void(0);" title="Clique para interagir" onclick="expandHidden('#y2010');">
+                    <a href="javascript:void(0);" title="Clique para interagir" onclick="expandHidden('#y2010');"
+                        class="only-desktop">
                         <img src="images-timeline/expand.png" alt="Ver mais" class="expandir">
                     </a>
                     <div class="flex-box align-center">
                         <figure class="">
-                            <img src="images-timeline/slider13.jpg" alt="Construção do Sonho" class="image" onclick="expandHidden2('#y2010')">
+                            <img src="images-timeline/slider13.jpg" alt="Construção do Sonho" class="image image--vertical"
+                                onclick="expandHidden2('#y2010')">
                         </figure>
                         <article class="right_double">
                             <h2 class="title">PUBLICAMOS O LIVRO<br>
                                 <span><i>"A construção<br> do sonho"</i></span>
                             </h2>
-                            <p class="text quote"><i>
-                                    Para celebrar 40 anos de atuação, criamos o<br>
-                                    livro que conta um pouco da história, filosofia<br>
-                                    e nossos valores. A publicação foi escrita por<br>
-                                    Paulo Briguet e Domingos Pellegrini a partir<br>
-                                    de depoimentos de diretores, colaboradores,<br>
-                                    clientes e parceiros.
-                                </i>
-                                <span class="slider_year--big">2010</span>
-                            </p>
+                            <div class="flex-box mob_row">
+                                <a href="javascript:void(0);" title="Clique para interagir"
+                                    onclick="expandHidden('#y2010');" class="only-mobile">
+                                    <img src="images-timeline/expand.png" alt="Ver mais" class="expandir">
+                                </a>
+                                <p class="text quote"><i>
+                                        Para celebrar 40 anos de atuação, criamos o<br>
+                                        livro que conta um pouco da história, filosofia<br>
+                                        e nossos valores. A publicação foi escrita por<br>
+                                        Paulo Briguet e Domingos Pellegrini a partir<br>
+                                        de depoimentos de diretores, colaboradores,<br>
+                                        clientes e parceiros.
+                                    </i>
+                                    <span class="slider_year--big">2010</span>
+                                </p>
+
+                            </div>
                         </article>
                     </div>
                 </div>
@@ -680,7 +710,7 @@
                     <div class="flex-box  align-center">
                         <span class="slider_year--big">2016</span>
                         <a href="javascript:void(0);" title="Clique para interagir"
-                            onclick="expandHiddenVideo('#y2016_2', 'https://player.vimeo.com/video/397422944');">
+                            onclick="expandHiddenVideo('#y2016_2', 'https://player.vimeo.com/video/397422944');" class="only-desktop">
                             <img src="images-timeline/expand.png" alt="Ver mais" class="expandir">
                         </a>
                     </div>
@@ -688,6 +718,10 @@
                         <h2 class="title">PARCERIA COM A<br>
                             <span><i>Porsche<br> Consulting</i></span>
                         </h2>
+                        <a href="javascript:void(0);" title="Clique para interagir"
+                            onclick="expandHiddenVideo('#y2016_2', 'https://player.vimeo.com/video/397422944');" class="only-mobile">
+                            <img src="images-timeline/expand.png" alt="Ver mais" class="expandir">
+                        </a>
                         <p class="text quote"><i>
                                 Aprimoramos e inovamos nos processos<br>
                                 construtivos de nossos empreendimentos em<br>
@@ -788,7 +822,7 @@
                 <div class="slider_hidden_content2" style="display: none;">
                     <a href="javascript:void(0)" onclick="closeHidden()" class="close_hidden" title="Fechar imagem"><img
                             src="images-timeline/close.png" alt="X"></a>
-                            <img src="images-timeline/background.jpg" class="banner">
+                    <img src="images-timeline/background.jpg" class="banner">
                     <div class="slider_container">
                         <div class="flex-box align-center">
                             <img src="images-timeline/slider19-hidden2.png" alt="Ezaro Fabian" class="col_02 image">
